@@ -3,6 +3,9 @@ for(let i=0; i<100; ++i) {
     nums[i] = Math.floor(Math.random() * 101);}
     console.log(nums);
     function findMax (arr) {
+        if (arr.length === 0){
+            return -1;
+        }
         let max = arr[0];
         for (let i = 1; i < arr.length; ++i) {
             if (arr[i] > max) {
@@ -12,6 +15,9 @@ for(let i=0; i<100; ++i) {
         return max;
     }
     function findMin (arr) {
+        if (arr.length === 0){
+            return -1;
+        }
         let min = arr[0];
         for (let i = 1; i < arr.length; ++i) {
             if (arr[i] < min) {
